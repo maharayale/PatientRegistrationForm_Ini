@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- 
+Description: displayCookiesData.html is the page that is designed to display the username, firstname, Date of Birth and Reasons from 
+reigstration from locally stored cookies. 
+These information are believed to be important for management purposes.  
+by: Ma Ya
+Date last edited: 11/23/2023
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies Data Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico " type="image/x-icon" />
+  </head>
+  <body style="background-color: #aec1f9">
+    <!-- The logo and the time section -->
+  <header class="sticky-header">
+      <iframe id="iframeHeader" src="./header.html" scrolling="no"></iframe>
+      <hr />
+  </header>
+    <section class="center">
+    <h1> Cookies Data For Management</h1>
+    <br><br >
+        <input onclick="displayCookies()" type="submit" value= "Display Cookies Data"></input>
+        <input onclick="deleteCookies()" type="submit" value= "Delete Cookies Data "></input>
+        <div id="namesDisplay"></div>
+        <br><br >
+      <form action="index.html">
+          <input type="submit" value="Go back" />
+      </form>
+    </section>
+      <br><br><br><br >
+      <hr />
+      <br >   
+      <!-- Footer section -->
+      <section class="iframe"  > 
+         <iframe id="iframeFooter" src="./footer.html" scrolling="no"></iframe>
+      </section>    
+      <!-- custome javascript -->
+      <script src="./cookiesData.js"></script>
+  </body>
+</html>

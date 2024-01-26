@@ -1,0 +1,2 @@
+adminName: maya
+pwd: maya123

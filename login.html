@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- 
+Description: login page that is designed to Create the Admin credential that has the priviliage to look the cookies data store for username, firstname, Date of Birth and Reasons from reigstration.
+I added this part since I believed it is very imporatnt to secured the Patient's information.
+by: Ma Ya
+Last update 11/23/2023
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico " type="image/x-icon" />
+  </head>
+  <body style="background-color: #aec1f9">
+    <!-- The logo and the time section -->
+    <header class="sticky-header">
+      <iframe id="iframeHeader" src="./header.html" scrolling="no"></iframe>
+      <hr />
+    </header>
+
+    <section class="login">
+      <label for="adminname">Admin Name:</label>
+
+      <input type="text" id="adminname" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+      <br />
+      <button onclick="login()">Login</button>
+      <br />
+      <br />
+      <p><strong>NOTE: </strong></p>
+      <p>
+        Welcome! It seems this is the first time you're using this application
+        on this computer system. <br />
+        You now have the privilege to manage the cookie data. You will be
+        prompted to create credentials. Afterward, save your credentials and use
+        them for future access.
+      </p>
+    </section>
+    <!-- Footer section -->
+    <section class="iframe">
+      <iframe id="iframeFooter" src="./footer.html" scrolling="no"></iframe>
+    </section>
+    <script src="./login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+/* 
+Purpose: Style sheet to define the layout, design, and appearance of mKaT's Clinic web pages. 
+ by: Ma Ya
+ Date Created: 09/08/2023
+ Date Updated: 11/27/2023
+
+/* Common styles */
+body {
+  background-color: #aec1f9;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 20px 200px 20px 200px;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  margin: 0;
+}
+.center h1,
+.center,
+.thanks {
+  text-align: center;
+}
+
+/* Styling the Date&Time */
+.datetime-container {
+  background-color: transparent;
+  color: #333;
+  padding-left: 700px;
+  vertical-align: bottom;
+  text-align: right;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.error,
+.error-message {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Formatting the input data */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: lightpink;
+  outline: none;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type="date"],
+input[type="email"],
+.dropDown {
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  border: none;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: rgb(12, 51, 99);
+  font-weight: bold;
+  color: #f9f9f9;
+}
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: bisque;
+  font-weight: bold;
+}
+
+.buttons {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Title style */
+h1 {
+  color: blue;
+  text-align: left;
+}
+
+.title h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+
+.small-text {
+  font-size: small;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style the main section of the form */
+.registration {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+table.form,
+tr.form,
+td.form {
+  width: fit-content;
+  opacity: 0.9;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgreen;
+  border-spacing: 00px;
+  padding: 50px;
+  text-align: left;
+}
+
+/* Style the iframes and the footer */
+.sticky-header iframe {
+  width: 100%;
+  border: none;
+  height: 250px;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #aec1f9;
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
+}
+
+#iframeFooter {
+  width: 100%;
+  border: 2px solid #ccc;
+  height: 23vh;
+}
+
+.footer {
+  /* position: fixed; */
+  width: auto;
+  text-align: center;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  font-style: "font-family:Tahoma;";
+}
+
+/* Adjust the width of the range input */
+.slider {
+  width: 80%;
+}
+
+/* Apply styles to the login section */
+.login {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Style input fields */
+.login input {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the login button */
+.login button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Hover effect for the button */
+.login button:hover {
+  background-color: #45a049;
+}
+
+.CookiesData {
+  margin-top: 40px;
+  display: inline-table;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- 
+Description: Submit page, designed to give response to the the user after completing Patient Registration form. 
+It takes the firstname of the user and acknowelede the registration. 
+by: Ma Ya
+Date last edited: 11/10/2023 
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Page after completion of Patient Registration form.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico " type="image/x-icon" />
+  </head>
+  <body style="background-color: #aec1f9">
+    <!-- The logo and the time section -->
+    <header class="sticky-header">
+      <iframe id="iframeHeader" src="./header.html" scrolling="no"></iframe>
+      <hr />
+    </header>
+
+    <section class="center">
+      <script>
+        var submittedFirstName = localStorage.getItem("SubmittedFirstName");
+        if (submittedFirstName) {
+          var thanksMessage =
+            "Thank you, <span style='color: blue;'>" +
+            submittedFirstName +
+            "!</span>";
+          document.write("<h2>" + thanksMessage + "</h2>");
+        } else {
+          document.write("<h2>Thank you!</h2>");
+        }
+      </script>
+      <p>
+        Our team will review your information, and you will receive an email or
+        aphone call to
+      </p>
+      <p>
+        schedule your first appointment. In the meantime, please explore our
+        website to know more about our services
+      </p>
+      <br />
+      <br />
+
+      <p>
+        <strong>In Case of Emergency:</strong> If you are in an emergency
+        situation, please call 911 immediately. Your safety and well-being are
+        our top priorities.
+      </p>
+      <br />
+      <br />
+
+      <p>
+        If you have any questions or need assistance, please don't hesitate to
+        contact our patient support team at:
+      </p>
+      <h3>Address</h3>
+      <p>2304 Ravenlake Dr<br />Pearland, TX, 77584</p>
+      <p>Phone numbers: 832-000-000 and 713-000-000</p>
+      <p>email: customerservice@mkat.com</p>
+      <p><b>Website:</b> https://mkat.com</p>
+      <br />
+
+      <p>
+        Thank you! again for choosing mKaT's Clinic. We look forward to serving
+        your healthcare needs.
+      </p>
+      <br /><br />
+
+      <form action="index.html">
+        <input type="submit" value="Go back" />
+      </form>
+    </section>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <!-- Footer section -->
+    <section class="iframe">
+      <iframe id="iframeFooter" src="./footer.html" scrolling="no"></iframe>
+    </section>
+    <!-- custome java script -->
+    <script src="./reviewPage.js"></script>
+  </body>
+</html>
